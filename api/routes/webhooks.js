@@ -18,6 +18,8 @@ var client;
 //**** A P I *******
 //******************
 
+
+
 //DEVICE CREDENTIALS WEBHOOK
 router.post("/getdevicecredentials", async (req, res) => {
   try {
@@ -80,7 +82,7 @@ router.post("/getdevicecredentials", async (req, res) => {
 //SAVER WEBHOOK
 router.post("/saver-webhook", async (req, res) => {
   try {
-    if (req.headers.token != "121212") {
+    if (req.headers.token != process.env.EMQX_API_TOKEN) {
       req.sendStatus(404);
       return;
     }
@@ -370,3 +372,6 @@ setTimeout(() => {
 }, 3000);
 
 module.exports = router;
+
+
+
