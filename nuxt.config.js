@@ -4,7 +4,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Proyecto IoT',
+    title: 'IoT PRO',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,12 +41,7 @@ export default {
     `~/plugins/dashboard-plugin.js`,
   ],
   //autoimport
-  components: [
-    {
-      path: '~/components',
-      extensions: ['vue','jsx'],
-    }
-  ],
+  components: true,
   /*
   ** Nuxt.js dev-modules
   */
@@ -64,13 +59,12 @@ export default {
   axios: {
     baseURL: process.env.AXIOS_BASE_URL 
   },
-
   env:{
-    mqtt_prefix: process.env.MQTT_PREFIX,
-    mqtt_host: process.env.MQTT_HOST,
-    mqtt_port: process.env.MQTT_PORT
+   mqtt_prefix: process.env.MQTT_PREFIX,
+   mqtt_host: process.env.MQTT_HOST,
+   mqtt_port: process.env.MQTT_PORT
   },
-  
+
   server: {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost
