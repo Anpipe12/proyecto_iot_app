@@ -160,9 +160,14 @@ export default {
         }
       } catch (error) {
         console.log(error);
+
         if (error.response.status == 401) {
           console.log("NO VALID TOKEN");
           localStorage.clear();
+
+          const auth = {};
+          this.$store.commit("setAuth", auth);
+
           window.location.href = "/login";
         }
       }
@@ -188,7 +193,20 @@ export default {
           this.client.options.password = credentials.data.password;
         }
       } catch (error) {
+
         console.log(error);
+
+
+        if (error.response.status == 401) {
+          console.log("NO VALID TOKEN");
+          localStorage.clear();
+
+          const auth = {};
+          this.$store.commit("setAuth", auth);
+
+          window.location.href = "/login";
+        }
+        
       }
     },
 
@@ -202,11 +220,13 @@ export default {
         this.$store.state.auth.userData._id + "/+/+/notif";
 
       const connectUrl =
-        process.env.mqtt_prefix +
+        process.env.mqtt_prefix + 
         this.options.host +
         ":" +
         this.options.port +
         this.options.endpoint;
+
+        
 
       try {
         this.client = mqtt.connect(connectUrl, this.options);
