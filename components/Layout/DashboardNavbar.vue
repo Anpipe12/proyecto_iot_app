@@ -22,7 +22,7 @@
     <ul class="navbar-nav" :class="$rtl.isRTL ? 'mr-auto' : 'ml-auto'">
       <el-select
         class="select-success"
-        placeholder="Select Device"
+        placeholder="Seleccionar dispositivo"
         @change="selectDevice()"
         v-model="selectedDevice"
       >
@@ -78,7 +78,7 @@
         menu-classes="dropdown-navbar"
       >
         <template slot="title">
-          <div class="photo"><img src="img/mike.jpg" /></div>
+          <div class="photo"><img src="img/icon2.png" /></div>
           <b class="caret d-none d-lg-block d-xl-block"></b>
           <p @click="logOut()" class="d-lg-none">Log out</p>
         </template>
