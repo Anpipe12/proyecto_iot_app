@@ -225,7 +225,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: "Success! Alarm Rule was deleted"
+              message: "Exito! REgla de Alarma Borrada"
             });
             this.$store.dispatch("getDevices");
             return;
@@ -262,7 +262,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: "Success! Alarm Rule was updated"
+              message: "Exito! Regla de Alarma creada"
             });
 
             this.$store.dispatch("getDevices");
@@ -286,7 +286,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Variable must be selected"
+          message: " la Variable debe ser seleccionada"
         });
         return;
       }
@@ -295,7 +295,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Condition must be selected"
+          message: " La condicion debe ser seleccionada"
         });
         return;
       }
@@ -304,7 +304,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Value is empty"
+          message: " Valor esta Vacio"
         });
         return;
       }
@@ -313,7 +313,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Trigger Time is empty"
+          message: " Tiempo de Activacion Vacio"
         });
         return;
       }

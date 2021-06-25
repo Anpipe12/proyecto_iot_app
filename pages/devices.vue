@@ -195,7 +195,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: " Device Saver Status Updated"
+              message: " ACtuaizacion de estado Dispositivo"
             });
 
           }
@@ -207,7 +207,7 @@ export default {
           this.$notify({
             type: "danger",
             icon: "tim-icons icon-alert-circle-exc",
-            message: " Error updating saver rule status"
+            message: " Error Actualizando regla Dispositivo"
           });
           return;
         });
@@ -230,7 +230,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: device.name + " deleted!"
+              message: device.name + " Borrado!"
             });
           }
 
@@ -243,7 +243,7 @@ export default {
           this.$notify({
             type: "danger",
             icon: "tim-icons icon-alert-circle-exc",
-            message: " Error deleting " + device.name
+            message: " Error Borrando " + device.name
           });
           return;
         });
@@ -254,7 +254,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Device Name is Empty :("
+          message: " El nombre del Dispositivo esta Vacio :("
         });
         return;
       }
@@ -263,7 +263,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Device ID is Empty :("
+          message: " El ID del Dispositivo esta vacio :("
         });
         return;
       }
@@ -272,7 +272,7 @@ export default {
         this.$notify({
           type: "warning",
           icon: "tim-icons icon-alert-circle-exc",
-          message: " Tempalte must be selected"
+          message: " La PLantilla debe ser Seleccionada"
         });
         return;
       }
@@ -308,7 +308,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: "Success! Device was added"
+              message: "Exito! Dispositivo Adicionado"
             });
 
             return;
@@ -323,7 +323,7 @@ export default {
               type: "warning",
               icon: "tim-icons icon-alert-circle-exc",
               message:
-                "The device is already registered in the system. Try another device"
+                "El dispositivo ya esta Registrado en el sistema, pruebe con otro Dispositivo"
             });
             return;
           } else {
@@ -352,7 +352,7 @@ export default {
         this.$notify({
           type: "danger",
           icon: "tim-icons icon-alert-circle-exc",
-          message: "Error getting templates..."
+          message: "Error al obtener Plantilla..."
         });
         console.log(error);
         return;
@@ -376,7 +376,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: device.name + " deleted!"
+              message: device.name + " Borrado!"
             });
             this.$store.dispatch("getDevices");
           }
@@ -386,7 +386,7 @@ export default {
           this.$notify({
             type: "danger",
             icon: "tim-icons icon-alert-circle-exc",
-            message: " Error deleting " + device.name
+            message: " Error Borrando " + device.name
           });
         });
     },

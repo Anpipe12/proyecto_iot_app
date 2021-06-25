@@ -53,7 +53,7 @@
             <div v-if="widgetType == 'numberchart'">
               <base-input
                 v-model="ncConfig.variableFullName"
-                label="Var Name"
+                label="Nombre variable"
                 type="text"
               >
               </base-input>
@@ -63,14 +63,14 @@
 
               <base-input
                 v-model.number="ncConfig.decimalPlaces"
-                label="Decimal Places"
+                label="posicion Decimales"
                 type="number"
               >
               </base-input>
 
               <base-input
                 v-model="ncConfig.icon"
-                label="Icon"
+                label="Icono"
                 type="text"
               ></base-input>
 
@@ -78,7 +78,7 @@
 
               <base-input
                 v-model.number="ncConfig.variableSendFreq"
-                label="Send Freq"
+                label="Frecuencia de Envio"
                 type="number"
               ></base-input>
 
@@ -86,7 +86,7 @@
 
               <base-input
                 v-model.number="ncConfig.chartTimeAgo"
-                label="Chart Back Time (mins)"
+                label="Tiempo de Retroceso (mins)"
                 type="number"
               ></base-input>
 
@@ -95,28 +95,28 @@
               <el-select
                 v-model="ncConfig.class"
                 class="select-success"
-                placeholder="Select Class"
+                placeholder="Seleccionar color"
                 style="width: 100%;"
               >
                 <el-option
                   class="text-success"
                   value="success"
-                  label="Success"
+                  label="Color 1"
                 ></el-option>
                 <el-option
                   class="text-primary"
                   value="primary"
-                  label="Primary"
+                  label="Color 2"
                 ></el-option>
                 <el-option
                   class="text-warning"
                   value="warning"
-                  label="Warning"
+                  label="Color 3"
                 ></el-option>
                 <el-option
                   class="text-danger"
                   value="danger"
-                  label="Danger"
+                  label="Color 4"
                 ></el-option>
               </el-select>
 
@@ -125,7 +125,7 @@
               <el-select
                 v-model="ncConfig.column"
                 class="select-success"
-                placeholder="Select Column Width"
+                placeholder="Seleccionar Ancho Widget"
                 style="width: 100%;"
               >
                 <el-option
@@ -187,14 +187,14 @@
             <div v-if="widgetType == 'switch'">
               <base-input
                 v-model="iotSwitchConfig.variableFullName"
-                label="Var Name"
+                label="Nombre variable"
                 type="text"
               >
               </base-input>
 
               <base-input
                 v-model="iotSwitchConfig.icon"
-                label="Icon"
+                label="Icono"
                 type="text"
               ></base-input>
 
@@ -203,28 +203,28 @@
               <el-select
                 v-model="iotSwitchConfig.class"
                 class="select-success"
-                placeholder="Select Class"
+                placeholder="Seleccionar color"
                 style="width: 100%;"
               >
                 <el-option
                   class="text-success"
                   value="success"
-                  label="Success"
+                  label="Color 1"
                 ></el-option>
                 <el-option
                   class="text-primary"
                   value="primary"
-                  label="Primary"
+                  label="Color 2"
                 ></el-option>
                 <el-option
                   class="text-warning"
                   value="warning"
-                  label="Warning"
+                  label="Color 3"
                 ></el-option>
                 <el-option
                   class="text-danger"
                   value="danger"
-                  label="Danger"
+                  label="Color 4"
                 ></el-option>
               </el-select>
 
@@ -233,7 +233,7 @@
               <el-select
                 v-model="iotSwitchConfig.column"
                 class="select-success"
-                placeholder="Select Column Width"
+                placeholder="Seleccionar Ancho Widget"
                 style="width: 100%;"
               >
                 <el-option
@@ -295,28 +295,28 @@
             <div v-if="widgetType == 'button'">
               <base-input
                 v-model="configButton.variableFullName"
-                label="Var Name"
+                label="Nombre Variable"
                 type="text"
               >
               </base-input>
 
               <base-input
                 v-model="configButton.message"
-                label="Message to send"
+                label="Mensage a Enviar"
                 type="text"
               >
               </base-input>
 
               <base-input
                 v-model="configButton.text"
-                label="Button Text"
+                label="Texto del Button"
                 type="text"
               >
               </base-input>
 
               <base-input
                 v-model="configButton.icon"
-                label="Icon"
+                label="Icono"
                 type="text"
               ></base-input>
 
@@ -325,28 +325,28 @@
               <el-select
                 v-model="configButton.class"
                 class="select-success"
-                placeholder="Select Class"
+                placeholder="Seleccionar color"
                 style="width: 100%;"
               >
                 <el-option
                   class="text-success"
                   value="success"
-                  label="Success"
+                  label="Color 1"
                 ></el-option>
                 <el-option
                   class="text-primary"
                   value="primary"
-                  label="Primary"
+                  label="Color 2"
                 ></el-option>
                 <el-option
                   class="text-warning"
                   value="warning"
-                  label="Warning"
+                  label="Color 3"
                 ></el-option>
                 <el-option
                   class="text-danger"
                   value="danger"
-                  label="Danger"
+                  label="Color 4"
                 ></el-option>
               </el-select>
 
@@ -355,7 +355,7 @@
               <el-select
                 v-model="configButton.column"
                 class="select-success"
-                placeholder="Select Column Width"
+                placeholder="Seleccionar Ancho Widget"
                 style="width: 100%;"
               >
                 <el-option
@@ -418,14 +418,14 @@
 
               <base-input
                 v-model="iotIndicatorConfig.variableFullName"
-                label="Var Name"
+                label="Nombre variable"
                 type="text"
               >
               </base-input>
 
               <base-input
                 v-model="iotIndicatorConfig.icon"
-                label="Icon"
+                label="Icono"
                 type="text"
               ></base-input>
 
@@ -433,7 +433,7 @@
 
               <base-input
                 v-model="iotIndicatorConfig.variableSendFreq"
-                label="Send Freq"
+                label="Frecuencia de Envio"
                 type="text"
               ></base-input>
 
@@ -442,28 +442,28 @@
               <el-select
                 v-model="iotIndicatorConfig.class"
                 class="select-success"
-                placeholder="Select Class"
+                placeholder="Seleccionar Color"
                 style="width: 100%;"
               >
                 <el-option
                   class="text-success"
                   value="success"
-                  label="Success"
+                  label="Color 1"
                 ></el-option>
                 <el-option
                   class="text-primary"
                   value="primary"
-                  label="Primary"
+                  label="Color 2"
                 ></el-option>
                 <el-option
                   class="text-warning"
                   value="warning"
-                  label="Warning"
+                  label="Color 3"
                 ></el-option>
                 <el-option
                   class="text-danger"
                   value="danger"
-                  label="Danger"
+                  label="Color 4"
                 ></el-option>
               </el-select>
 
@@ -472,7 +472,7 @@
               <el-select
                 v-model="iotIndicatorConfig.column"
                 class="select-success"
-                placeholder="Select Column Width"
+                placeholder="Seleccionar Ancho del Widget"
                 style="width: 100%;"
               >
                 <el-option
@@ -828,7 +828,7 @@ export default {
         this.$notify({
           type: "danger",
           icon: "tim-icons icon-alert-circle-exc",
-          message: "Error getting templates..."
+          message: "Error obteniendo templates..."
         });
         console.log(error);
         return;
@@ -860,7 +860,7 @@ export default {
           this.$notify({
             type: "success",
             icon: "tim-icons icon-alert-circle-exc",
-            message: "Template created!"
+            message: "Template creado!"
           });
           this.getTemplates();
 
@@ -870,7 +870,7 @@ export default {
         this.$notify({
           type: "danger",
           icon: "tim-icons icon-alert-circle-exc",
-          message: "Error creating template..."
+          message: "Error al crear template..."
         });
         console.log(error);
         return;
@@ -903,7 +903,7 @@ export default {
           this.$notify({
             type: "danger",
             icon: "tim-icons icon-alert-circle-exc",
-            message: template.name + " is in use. First remove the devices linked to the template!"
+            message: template.name + " esta en uso. borrar primero dispositivos vinvulado al template!"
           });
           
           return;
@@ -922,7 +922,7 @@ export default {
         this.$notify({
           type: "danger",
           icon: "tim-icons icon-alert-circle-exc",
-          message: "Error getting templates..."
+          message: "Error al obtener templates..."
         });
         console.log(error);
         return;

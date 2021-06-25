@@ -46,7 +46,7 @@
           </div>
 
           <div class="pull-right">
-            <h6><a href="#help!!!" class="link footer-link">Need Help?</a></h6>
+            <h6><a href="#help!!!" class="link footer-link">Necesitas Ayuda?</a></h6>
           </div>
         </div>
       </card>
@@ -83,7 +83,7 @@ export default {
             this.$notify({
               type: "success",
               icon: "tim-icons icon-check-2",
-              message: "Success! Welcome " + res.data.userData.name
+              message: "Exito! Bienvenido " + res.data.userData.name
             });
 
             console.log(res.data)
@@ -111,7 +111,7 @@ export default {
             this.$notify({
               type: "danger",
               icon: "tim-icons icon-alert-circle-exc",
-              message: "User already exists :("
+              message: "Usuario ya Existe :("
             });
 
             return;
@@ -119,7 +119,7 @@ export default {
             this.$notify({
               type: "danger",
               icon: "tim-icons icon-alert-circle-exc",
-              message: "Error creating user..."
+              message: "Error creando Usuario..."
             });
 
             return;
