@@ -4,13 +4,13 @@
 
     <side-bar
       :background-color="sidebarBackground"
-      short-title="IoT"
-      title="Proyecto IoT"
+      short-title="GL"
+      title="IoTicos GL"
     >
       <template slot-scope="props" slot="links">
         <sidebar-item
           :link="{
-            name: 'Panel de Control',
+            name: 'Dashboard',
             icon: 'tim-icons icon-laptop',
             path: '/dashboard'
           }"
@@ -19,7 +19,7 @@
 
         <sidebar-item
           :link="{
-            name: 'Dispositivos',
+            name: 'Devices',
             icon: 'tim-icons icon-light-3',
             path: '/devices'
           }"
@@ -28,7 +28,7 @@
 
         <sidebar-item
           :link="{
-            name: 'Alarmas',
+            name: 'Alarms',
             icon: 'tim-icons icon-bell-55',
             path: '/alarms'
           }"
@@ -37,7 +37,7 @@
 
         <sidebar-item
           :link="{
-            name: 'Plantillas',
+            name: 'Templates',
             icon: 'tim-icons icon-atom',
             path: '/templates'
           }"
@@ -101,7 +101,7 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "blue", //vue|blue|orange|green|red|primary
+      sidebarBackground: "primary", //vue|blue|orange|green|red|primary
       client: null,
       options: {
         host: process.env.mqtt_host,
